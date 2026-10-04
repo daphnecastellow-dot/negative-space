@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "negative-space"
+version = "0.1.0"
+description = "Preserve failed hypotheses, missing evidence, and research dead ends without turning absence into proof."
+requires-python = ">=3.10"
+
+[project.scripts]
+negative-space = "negative_space:main"
+
+[tool.setuptools]
+py-modules = ["negative_space"]

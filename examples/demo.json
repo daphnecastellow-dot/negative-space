@@ -1,0 +1,107 @@
+{
+  "format": "negative-space/0.1",
+  "title": "North Reach missing diary entry: negative-space demo",
+  "created_at": "2026-10-04T20:26:46Z",
+  "hypotheses": [
+    {
+      "id": "H001",
+      "text": "A keeper diary contained the famous final warning entry.",
+      "status": "parked",
+      "note": "Later retellings attribute an ominous final warning to a keeper.",
+      "reopen_when": "Reopen if an authenticated diary, contemporary transcript, or catalog record is located.",
+      "history": [
+        {
+          "at": "2026-10-04T20:26:46Z",
+          "action": "created",
+          "status": "open",
+          "reason": "Later retellings attribute an ominous final warning to a keeper."
+        },
+        {
+          "at": "2026-10-04T20:26:49Z",
+          "action": "status",
+          "previous_status": "open",
+          "status": "parked",
+          "reason": "The warning is present in a later retelling but was not located in the checked early materials, and the later source does not identify its provenance.",
+          "reopen_when": "Reopen if an authenticated diary, contemporary transcript, or catalog record is located."
+        }
+      ]
+    },
+    {
+      "id": "H002",
+      "text": "A severe storm directly caused the disappearance.",
+      "status": "weakened",
+      "note": "Weather is a plausible candidate explanation, but causation needs more than rough weather alone.",
+      "reopen_when": "",
+      "history": [
+        {
+          "at": "2026-10-04T20:26:49Z",
+          "action": "created",
+          "status": "open",
+          "reason": "Weather is a plausible candidate explanation, but causation needs more than rough weather alone."
+        },
+        {
+          "at": "2026-10-04T20:26:50Z",
+          "action": "status",
+          "previous_status": "open",
+          "status": "weakened",
+          "reason": "Available weather material supports difficult conditions but not the specific causal claim.",
+          "reopen_when": ""
+        }
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "id": "K001",
+      "hypothesis": "H001",
+      "target": "Published transcription of the 1904 keeper log",
+      "method": "line-by-line review",
+      "expected": "The quoted final warning or substantially equivalent wording",
+      "outcome": "not-found",
+      "result": "No matching warning entry was found in the transcription.",
+      "source": "Fictional demonstration transcription",
+      "url": "",
+      "note": "",
+      "checked_at": "2026-10-04T20:26:47Z"
+    },
+    {
+      "id": "K002",
+      "hypothesis": "H001",
+      "target": "Contemporary newspaper coverage",
+      "method": "search for quoted diary language and paraphrases",
+      "expected": "A reference to the warning entry close to the event date",
+      "outcome": "not-found",
+      "result": "The reviewed contemporary reports do not mention the warning entry.",
+      "source": "Fictional demonstration newspaper set",
+      "url": "",
+      "note": "",
+      "checked_at": "2026-10-04T20:26:47Z"
+    },
+    {
+      "id": "K003",
+      "hypothesis": "H001",
+      "target": "Later folklore book",
+      "method": "citation inspection",
+      "expected": "A citation identifying the diary or an earlier source for the warning",
+      "outcome": "inconclusive",
+      "result": "The warning appears in the book, but no traceable source is supplied.",
+      "source": "Legends of the Outer Shoals (fictional)",
+      "url": "",
+      "note": "",
+      "checked_at": "2026-10-04T20:26:48Z"
+    },
+    {
+      "id": "K004",
+      "hypothesis": "H002",
+      "target": "Regional weather records",
+      "method": "compare recorded conditions with the proposed event window",
+      "expected": "Conditions severe enough, at the relevant place and time, to support the proposed mechanism",
+      "outcome": "inconclusive",
+      "result": "The records show rough weather in the broader period but do not establish the claimed causal sequence.",
+      "source": "Fictional demonstration weather record",
+      "url": "",
+      "note": "",
+      "checked_at": "2026-10-04T20:26:50Z"
+    }
+  ]
+}

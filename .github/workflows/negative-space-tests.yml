@@ -1,0 +1,33 @@
+name: Negative Space tests
+
+on:
+  push:
+    paths:
+      - "negative_space.py"
+      - "pyproject.toml"
+      - "tests/**"
+      - "examples/**"
+      - ".github/workflows/negative-space-tests.yml"
+  pull_request:
+    paths:
+      - "negative_space.py"
+      - "pyproject.toml"
+      - "tests/**"
+      - "examples/**"
+      - ".github/workflows/negative-space-tests.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run tests
+        run: python -m unittest discover -s tests -v
+      - name: Validate example
+        run: python negative_space.py validate examples/demo.json

@@ -5,6 +5,7 @@ on:
     paths:
       - "negative_space.py"
       - "pyproject.toml"
+      - "README.md"
       - "tests/**"
       - "examples/**"
       - ".github/workflows/negative-space-tests.yml"
@@ -12,6 +13,7 @@ on:
     paths:
       - "negative_space.py"
       - "pyproject.toml"
+      - "README.md"
       - "tests/**"
       - "examples/**"
       - ".github/workflows/negative-space-tests.yml"
